@@ -1,0 +1,145 @@
+version: "2.0"
+
+nlu:
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: about_bot
+  examples: |
+    - Who are you? And what do you do?
+    - What are your features?
+    - What are you?
+    - tell me about your self
+    - What is your name?
+    - What should I call you?
+    - What is your good name?
+    - and you are?
+    - tell me your name?
+
+- intent: user_name
+  examples: |
+    - my name is [kunal]{"entity":"name","value":"kunal"}
+    - my name is [Kushal Gera]{"entity":"name","value":"Kushal Gera"}
+    - my name is [Hritik]{"entity":"name","value":"Hritik"}
+    - I am [kunal]{"entity":"name","value":"kunal"}
+    - I am [Kushal Gera]{"entity":"name","value":"Kushal Gera"}
+    - I am [Hritik]{"entity":"name","value":"Hritik"}
+    - [Abhay]{"entity":"name","value":"Abhay"}
+
+- intent: user_sick
+  examples: |
+    - I am sick.
+    - I have health issue.
+    - I am not feeling well.
+    - I think i am sick.
+    - I am ill.
+    - I think i am ill.
+
+- intent: user_covid_positive
+  examples: |
+    - "Yes, i am covid positive."
+    - "Yes. The result came out positive"
+    - "Yes, I have corona virus"
+    - "Yes, I have coivd"
+    - "Yes. I am positive"
+
+- intent: tell_preccautions
+  examples: |
+    - "Please tell me about the precautions"
+    - "Yes, please do tell."
+    - "Yes tell me about the precautions"
+    - "yes tell me the precautions ";
+
+- intent: play_video
+  examples: |
+    - play the video
+    - open the url
+    - open the link in the browser
+    - play the video that i asked for
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_sad
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
